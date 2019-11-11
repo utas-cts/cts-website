@@ -47,7 +47,7 @@ li a:hover {
 
 body {
 	background-color: var(--background_colour);
-	margin: 0px 100px 0px 100px;
+	margin: 0 100px 0 100px;
 }
 
 table {
