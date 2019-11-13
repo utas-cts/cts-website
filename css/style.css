@@ -47,6 +47,7 @@ li a:hover {
 
 body {
 	background-color: var(--background_colour);
+	color: var(--text_colour);
 	margin: 0 100px 0 100px;
 }
 
@@ -63,4 +64,13 @@ table, td {
 	padding: 5px;
 	border: 1px solid var(--border_colour);
 	text-align: center;
+}
+
+label {
+	color: var(--text_colour);
+}
+
+input {
+	background-color: var(--background_colour);
+	color: var(--text_colour);
 }
