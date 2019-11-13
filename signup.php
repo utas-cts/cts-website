@@ -28,5 +28,5 @@ if($mysqli->query($sql_insert) === TRUE) {
 } else{
 	echo "Error: " . $sql_insert . "<br>" . $mysqli->error;
 }
-#header('Location: index.php');
+header('Location: index.php');
 ?>
