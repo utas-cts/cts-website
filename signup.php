@@ -8,15 +8,15 @@ $type = $_POST["member_type"];
 $email = $_POST["email"];
 
 if($_POST["photograph_allowed"] === "on"){
-	$photo_allowed = true;
+	$photo_allowed = 1;
 }else{
-	$photo_allowed = false;
+	$photo_allowed = 0;
 }
 
 if($_POST["email_allowed"] === "on"){
-	$email_allowed = true;
+	$email_allowed = 1;
 }else{
-	$email_allowed = false;
+	$email_allowed = 0;
 }
 
 $date = date('Y-m-d H:i:s');
