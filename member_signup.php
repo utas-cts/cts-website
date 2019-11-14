@@ -3,6 +3,7 @@
 
 	<head>
 		<Title>Member Signup</Title>
+		<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
