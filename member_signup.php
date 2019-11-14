@@ -28,24 +28,25 @@
 			<br>
 			<input name="email" type="email" required="true">
 			<br>
-			<label>Member type</label>
+			<br>
+			Member type
 			<br>
 			<br>
-			Staff
+			<label for="staff">Staff</label>
 			<br>
-			<input name="member_type" value="Staff" type="radio" required="true">
+			<input id="staff" name="member_type" value="Staff" type="radio" required="true">
 			<br>
-			Student
+			<label for="student">Student</label>
 			<br>
-			<input name="member_type" value="Student" type="radio" required="true">
+			<input id="student" name="member_type" value="Student" type="radio" required="true">
 			<br>
-			<label>Check if you will allow the CTS to take your photo at events and use them on social media</label>
+			<label for="photograph_allowed">Check if you will allow the CTS to take your photo at events and use them on social media</label>
 			<br>
-			<input name="photograph_allowed" type="checkbox">
+			<input id="photograph_allowed" name="photograph_allowed" type="checkbox">
 			<br>
-			<label>Check if you will allow the CTS to contact you via email (You can opt out any time)</label>
+			<label for="email_allowed">Check if you will allow the CTS to contact you via email (You can opt out any time)</label>
 			<br>
-			<input name="email_allowed" type="checkbox">
+			<input id="email_allowed" name="email_allowed" type="checkbox">
 			<br>
 			<button>Submit</button>
 		</form>
