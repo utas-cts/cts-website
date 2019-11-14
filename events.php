@@ -7,7 +7,22 @@
 
 	<body>
 		<?php
-		include('navbar.php');
+			include('navbar.php');
 		?>
+		<br>
+		<br>
+		<table>
+			<tr>
+				<th>Event</th>
+				<th>Date</th>
+				<th>Description</th>
+				<th>Location</th>
+				<th>May change</th>
+				<th>Cost</th>
+			</tr>
+				<?php
+					include('event_table.php');
+				?>
+		</table>
 	</body>
 </html>
