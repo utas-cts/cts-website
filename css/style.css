@@ -48,7 +48,7 @@ li a:hover {
 body {
 	background-color: var(--background_colour);
 	color: var(--text_colour);
-	margin: 0 100px 0 100px;
+	margin: 0 2vw 0 2vw;
 }
 
 table {
