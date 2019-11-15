@@ -9,7 +9,7 @@
 		<?php
 			include('navbar.php');
 		?>
-		<h2>Todays Date: <?php echo date("M d")?></h2>
+		<h2>Todays Date: <?php echo date("M dS")?></h2>
 		<br>
 		<table>
 			<tr>
