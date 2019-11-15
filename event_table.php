@@ -15,7 +15,7 @@ if (mysqli_num_rows($table) > 0) {
 			}
 
 			echo "<tr>";
-				echo "<td>" . $row["name"]. "</td><td>" . $row["event_datetime"]. "</td><td>" .
+				echo "<td>" . $row["name"]. "</td><td>" . date_format(date_create($row["event_datetime"]),"D M dS ga") . "</td><td>" .
 				$row["description"] . "</td><td>" . $row["location"] . "</td><td>" . $may_change 
 				. "</td><td>$" . $row["cost"] . "</td>";
 			echo "</tr>";
