@@ -11,19 +11,9 @@
       include('navbar.php');
     ?>
     <h2>Todays Date: <?php echo date("M dS")?></h2>
-    <br>
-    <table>
-      <tr>
-        <th>Event</th>
-        <th>Date</th>
-        <th>Description</th>
-        <th>Location</th>
-        <th>May change</th>
-        <th>Cost</th>
-      </tr>
     <?php
-      include('event_table.php');
-    ?>
-    </table>
+          include('event_table.php');
+	?>
+	<p>Please contact us if you wish to suggest an event at the <a href="contacts.php">contacts page</a></p>
   </body>
 </html>

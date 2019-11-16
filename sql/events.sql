@@ -1,4 +1,4 @@
-CREATE TABLE events(
+CREATE TABLE IF NOT EXISTS events(
 	ID INT(11) NOT NULL AUTO_INCREMENT,
 	name varchar(128) NOT NULL,
 	event_datetime datetime NOT NULL,
