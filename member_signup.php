@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <Title>Member Signup</Title>
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <?php
+      include('navbar.php');
+    ?>
+	<form action="signup.php" method="post">
+      <div id="user_details">
+        <label for="id">Student/Staff ID</label>
+        <br>
+        <input id="id" name="id" required>
+        <br>
+        <label for="first_name">First Name</label>
+        <br>
+        <input id="first_name" name="first_name" required>
+        <br>
+	    <label for="last_name">Last Name</label>
+	    <br>
+        <input id="last_name" name="last_name" required>
+        <br>
+        <label for="email">Utas e-mail address</label>
+        <br>
+	    <input id="email" name="email" type="email" required>
+      </div>
 
-	<head>
-		<Title>Member Signup</Title>
-		<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
+	  <div id="member_type">
+	    <fieldset>
+	      <legend>Member Type</legend>
+          <label>
+            <input id="staff" name="member_type" value="Staff" type="radio" required>
+            <i>Staff</i>
+	      </label>
+          <label>
+		    <input id="student" name="member_type" value="Student" type="radio" required>
+            <i>Student</i>
+  		  </label>
+		</fieldset>
+      </div>
+	  
+	  <div id="permissions">
+	    <label>
+	      <input id="photograph_allowed" name="photograph_allowed" type="checkbox">
+	      Check if you will allow the CTS to take your photo at events and use them on social media
+	    </label>
+        <br>
+	    <label>
+          <input id="email_allowed" name="email_allowed" type="checkbox">
+          Check if you will allow the CTS to contact you via email (You can opt out any time)
+	    </label>
+      </div>
 
-	<body>
-		<?php
-			include('navbar.php');
-		?>
-		<form action="signup.php" method="post">
-			<label>Student/Staff ID</label>
-			<br>
-			<input name="ID" required="true">
-			<br>
-			<label>First Name</label>
-			<br>
-			<input name="first_name" required="true">
-			<br>
-			<label>Last Name</label>
-			<br>
-			<input name="last_name" required="true">
-			<br>
-			<label>Utas e-mail address</label>
-			<br>
-			<input name="email" type="email" required="true">
-			<br>
-			<br>
-			Member type
-			<br>
-			<br>
-			<label for="staff">Staff</label>
-			<br>
-			<input id="staff" name="member_type" value="Staff" type="radio" required="true">
-			<br>
-			<label for="student">Student</label>
-			<br>
-			<input id="student" name="member_type" value="Student" type="radio" required="true">
-			<br>
-			<label for="photograph_allowed">Check if you will allow the CTS to take your photo at events and use them on social media</label>
-			<br>
-			<input id="photograph_allowed" name="photograph_allowed" type="checkbox">
-			<br>
-			<label for="email_allowed">Check if you will allow the CTS to contact you via email (You can opt out any time)</label>
-			<br>
-			<input id="email_allowed" name="email_allowed" type="checkbox">
-			<br>
-			<button>Submit</button>
-		</form>
-	</body>
-
+      <button>Submit</button>
+    </form>
+  </body>
 </html>
