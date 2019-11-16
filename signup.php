@@ -1,7 +1,7 @@
 <?php
 include("db_connect.php");
 
-$id = $_POST["ID"];
+$id = $_POST["id"];
 $first_name = $_POST["first_name"];
 $last_name = $_POST["last_name"];
 $type = $_POST["member_type"];
