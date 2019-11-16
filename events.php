@@ -14,6 +14,6 @@
     <?php
           include('event_table.php');
 	?>
-	<p>Please contact us if you wish to suggest an event at the <a href="contacts.php">contacts page</a></p>
+	<p>Please contact us if you wish to suggest an event at the <a href="contact.php">contacts page</a></p>
   </body>
 </html>
