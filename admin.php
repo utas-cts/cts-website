@@ -13,6 +13,8 @@
     <?php
       include('navbar.php');
 	?>
-	<h2>Admin Page</h2>
+	<h2>Admin Control Panel</h2>
+	<a href="member_list.php"><p>Member list</p></a>
+	<a href="event_management.php"><p>Event Management</p></a>
   </body>
 </html>
