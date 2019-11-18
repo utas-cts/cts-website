@@ -20,7 +20,7 @@
 	<div class="row">
 	<div class="column">
 	<h2>Add event</h2>
-	<form action='add_event.php'>
+	<form action='add_event.php' method="post">
 	<lable>
 	  Event name
 	  <br>
@@ -37,6 +37,7 @@
 	  Event location
 	  <br>
 	  <input name="location" maxlength="128" required>
+	</lable>
 	<br>
 	<lable>
 	  Event date
@@ -56,15 +57,21 @@
 	  <input type="number" step="0.01" name="cost" required>
 	</lable>
 	<br>
+	<lable>
+	  Event may change
+	  <br>
+	  <input type="checkbox" name="may_change">
+	</lable>
+	<br>
 	<button>Submit</button>
 	</form>
 	</div>
 	<div class="column">
 	<h2>Delete Event</h2>
-	<form action="delete_event.php">
+	<form action="delete_event.php" method="post">
 	  <label>
 		Id
-		<input type="number">
+		<input type="number" name="id">
 	  </label>
 	  <br>
 	  <button>Submit</button>
