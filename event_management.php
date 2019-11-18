@@ -11,7 +11,11 @@
   </head>
   <body>
     <?php
-      include('navbar.php');
+		include('navbar.php');
+	?>
+	<h2>Events</h2>
+	<?php
+		include('event_table.php');
 	?>
 	<h2>Event management</h2>
 	<form action=''>

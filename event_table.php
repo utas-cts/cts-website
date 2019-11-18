@@ -3,7 +3,7 @@ include("db_connect.php");
 $date = date("Y-m-d H:i:s");
 $fortnight = date("Y-m-d H:i:s", strtotime("+2 week"));
 if($_SESSION["authorised"] == true){
-	$event_query="SELECT id, name, event_datetime, description, location, may_change, cost from events where event_datetime > '$date' and event_datetime < '$fortnight'";
+	$event_query="SELECT id, name, event_datetime, description, location, may_change, cost from events";
 }else{
 	$event_query="SELECT name, event_datetime, description, location, may_change, cost from events where event_datetime > '$date' and event_datetime < '$fortnight'";
 }
