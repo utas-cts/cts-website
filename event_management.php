@@ -14,5 +14,36 @@
       include('navbar.php');
 	?>
 	<h2>Event management</h2>
+	<form action=''>
+	<lable>
+	  Id
+	  <br>
+      <input name="id">
+	</lable>
+	<br>
+	<lable>
+	  Event name
+	  <br>
+	  <input name="name">
+	</lable>
+	<br>
+	<lable>
+	  Event description
+	  <br>
+	  <input name="description">
+	</lable>
+	<br>
+	<lable>
+	  Event date
+	  <br>
+	  <input type="date" name="date">
+	</lable>
+	<br>
+	<lable>
+	  Event time
+	  <br>
+	  <input type="time" name="time">
+	</lable>
+	</form>
   </body>
 </html>
