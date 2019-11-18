@@ -17,37 +17,59 @@
 	<?php
 		include('event_table.php');
 	?>
-	<h2>Event management</h2>
-	<form action=''>
-	<lable>
-	  Id
-	  <br>
-      <input name="id">
-	</lable>
-	<br>
+	<div class="row">
+	<div class="column">
+	<h2>Add event</h2>
+	<form action='add_event.php'>
 	<lable>
 	  Event name
 	  <br>
-	  <input name="name">
+	  <input name="name" maxlength="128" required>
 	</lable>
 	<br>
 	<lable>
 	  Event description
 	  <br>
-	  <input name="description">
+	  <input name="description" maxlength="512" required>
 	</lable>
+	<br>
+	<lable>
+	  Event location
+	  <br>
+	  <input name="location" maxlength="128" required>
 	<br>
 	<lable>
 	  Event date
 	  <br>
-	  <input type="date" name="date">
+	  <input type="date" name="date" required>
 	</lable>
 	<br>
 	<lable>
 	  Event time
 	  <br>
-	  <input type="time" name="time">
+	  <input type="time" name="time" required>
 	</lable>
+	<br>
+	<lable>
+	  Event Cost
+	  <br>
+	  <input type="number" step="0.01" name="cost" required>
+	</lable>
+	<br>
+	<button>Submit</button>
 	</form>
+	</div>
+	<div class="column">
+	<h2>Delete Event</h2>
+	<form action="delete_event.php">
+	  <label>
+		Id
+		<input type="number">
+	  </label>
+	  <br>
+	  <button>Submit</button>
+	</form>
+	</div>
+	</div>
   </body>
 </html>
