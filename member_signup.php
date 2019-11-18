@@ -14,7 +14,7 @@
       <div id="user_details">
         <label for="id">Student/Staff ID</label>
         <br>
-        <input id="id" name="id" required>
+        <input type="number" id="id" name="id" required>
         <br>
         <label for="first_name">First Name</label>
         <br>
