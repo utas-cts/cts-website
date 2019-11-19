@@ -1,5 +1,5 @@
 <?php
-	require("db_connect.php");
+	require($_SERVER["DOCUMENT_ROOT"] . "/db_connect.php");
 	if($_POST["may_change"] == "yes"){
 		$may_change = 1;
 	}else{
@@ -14,6 +14,6 @@
 	   	$_POST["cost"]);
 
 	$query->execute();
-	header("Location: event_management.php");
+	header("Location: ./event_management.php");
 	exit();
 ?>

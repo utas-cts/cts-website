@@ -1,5 +1,5 @@
 <?php
-	require("check_login.php");
+	require($_SERVER["DOCUMENT_ROOT"] . "/check_login.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -7,11 +7,11 @@
     <meta charset="UTF-8">
     <title>Member List</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <?php
-      include('navbar.php');
+      include($_SERVER["DOCUMENT_ROOT"] . '/navbar.php');
 	?>
 	<br>
 	<table>
@@ -28,7 +28,7 @@
 		<th>Email Allowed</th>
 	  </tr>	
     <?php
-      require('db_connect.php');
+      require($_SERVER["DOCUMENT_ROOT"] . '/db_connect.php');
       $query="SELECT * FROM members";
 	  $result=mysqli_query($mysqli, $query);
 	  while($row = mysqli_fetch_assoc($result)){

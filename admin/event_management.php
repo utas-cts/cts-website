@@ -1,5 +1,5 @@
 <?php
-	require("check_login.php");
+	require($_SERVER["DOCUMENT_ROOT"] . "/check_login.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -7,20 +7,20 @@
     <meta charset="UTF-8">
     <title>Event Management</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <?php
-		include('navbar.php');
+		include($_SERVER["DOCUMENT_ROOT"] . '/navbar.php');
 	?>
 	<h2>Events</h2>
 	<?php
-		include('event_table.php');
+		include($_SERVER["DOCUMENT_ROOT"] . '/event_table.php');
 	?>
 	<div class="row">
 	<div class="column">
 	<h2>Add event</h2>
-	<form action='add_event.php' method="post">
+	<form action='./add_event.php' method="post">
 	<lable>
 	  Event name
 	  <br>
@@ -68,7 +68,7 @@
 	</div>
 	<div class="column">
 	<h2>Delete Event</h2>
-	<form action="delete_event.php" method="post">
+	<form action="./delete_event.php" method="post">
 	  <label>
 		Id
 		<input type="number" name="id">
