@@ -39,5 +39,28 @@
 	  }
 	?>
 	</table>
+	<h2>Update payment</h2>
+	<form action="./update_payment.php" method="post">
+		<label>
+			Id
+			<br>
+			<input type="number" name="id" required>
+		</label>
+		<br>
+		<label>
+			Payment type
+			<br>
+			<select name="payment_type" required>
+				<option value="First_Semester">First Semester</option>
+				<option value="Second_Semester">Second Semester</option>
+				<option value="Both">Both</option>
+			</select>
+		</label>
+		<br>
+		<button>Submit</button>
+		<br>
+
+
+	</form>
   </body>
 </html>
