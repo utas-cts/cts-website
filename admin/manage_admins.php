@@ -26,7 +26,7 @@
 	<div class="row">
 	  <div class="column">
 	    <h2>Add new admin</h2>
-	    <form action="./add_admin.php">
+	    <form action="./add_admin.php" method="post">
 	      <label>
 		    Username
   		    <br>
@@ -36,7 +36,7 @@
 	      <label>
 		    Password
 		    <br>
-		    <input type="password" required>
+		    <input type="password" name="password" required>
 	      </label>
 	      <br>
 	      <button>Submit</button>
@@ -44,17 +44,11 @@
 	  </div>
 	  <div class="column">
 	    <h2>Update Password</h2>
-	    <form action="./update_admin.php">
+	    <form action="./update_admin.php" method="post">
 		  <label>
 			Username
 			<br>
 			<input type="text" name="username" required>
-		  </label>
-		  <br>
-		  <label>
-		    Old Password
-		    <br>
-		    <input type="text" name="old_password" required>
 		  </label>
 		  <br>
 		  <label>

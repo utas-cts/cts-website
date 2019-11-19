@@ -23,10 +23,10 @@
 				$query->execute();
 				$query->close();
 			}
-			header("Location: admin.php");
+			header("Location: /admin/");
 			exit();
 		}
 	}
-	header("Location: login_page.php");
+	header("Location: /login_page.php");
 	exit();
 ?>
