@@ -8,6 +8,7 @@ echo '
 if($_SESSION["authorised"]){
 	echo '
 		<li><a href="/admin/">Admin</a></li>
+		<li><a href="/logout.php">Logout</a></li>
 		</ul>';
 }else{
 	echo '
