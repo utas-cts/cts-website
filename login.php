@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 	session_start();
 	require("db_connect.php");
 	$username = $_POST["username"];
@@ -18,7 +21,7 @@
 			//Change hash if php has updated defaults
 			if(password_needs_rehash($hashed_password, PASSWORD_DEFAULT)){
 				$new_hash = password_hash($password, PASSWORD_DEFAULT);
-				$query = $mysqli->prepare("UPDATE admins SET password_hash=? where username=?");
+				$query = $mysqli->prepare("UPDATE admins SET hashed_password=? where username=?");
 				$query->bind_param("ss", $new_hash, $username);
 				$query->execute();
 				$query->close();
