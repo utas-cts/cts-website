@@ -11,18 +11,18 @@
     <?php
       include('navbar.php');
     ?>
-	<form action="login.php" method="post">
-	  <label>
-	    Username:
+    <form action="login.php" method="post">
+      <label>
+        Username:
         <br>
-		<input name="username" required>
-	  </label>
+        <input name="username" required>
+      </label>
       <br>
-	  <label>
-	    Password:
-	    <br>
-		<input name="password" type="password" required>
-	  </label>
+      <label>
+        Password:
+        <br>
+        <input name="password" type="password" required>
+      </label>
       <button>Login</button>
     </form>
   </body>
