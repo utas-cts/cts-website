@@ -8,7 +8,8 @@
   </head>
  <body>
     <?php
-     include($_SERVER["DOCUMENT_ROOT"] . '/navbar.php');
+		require($_SERVER["DOCUMENT_ROOT"] . "/check_login.php");
+		include($_SERVER["DOCUMENT_ROOT"] . '/navbar.php');
 	?>
 	<h2>Admins</h2>
 	<?php
