@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 include("db_connect.php");
 
 $id = $_POST["id"];
@@ -20,10 +23,9 @@ if($_POST["email_allowed"] === "on"){
 }
 
 $date = date('Y-m-d H:i:s');
-$status = 'None';
 
-$query = $mysqli->prepare("INSERT INTO members (ID, first_name, last_name, member_type, email, signup_date, payment_status, photo_allowed, email_allowed) values (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$query->bind_param("issssssii",$_POST["id"], $_POST["first_name"], $_POST["last_name"], $_POST["member_type"], $_POST["email"], $date, $status, $photo_allowed, $email_allowed);
+$query = $mysqli->prepare("INSERT INTO members (ID, first_name, last_name, member_type, email, signup_date, photo_allowed, email_allowed) values (?, ?, ?, ?, ?, ?, ?, ?)");
+$query->bind_param("isssssii",$_POST["id"], $_POST["first_name"], $_POST["last_name"], $_POST["member_type"], $_POST["email"], $date, $photo_allowed, $email_allowed);
 $query->execute();
 
 header('Location: index.php');

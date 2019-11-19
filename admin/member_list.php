@@ -23,7 +23,8 @@
 		<th>Email</th>
 		<th>Signup Date</th>
 		<th>Payment Date</th>
-		<th>Payment Status</th>
+		<th>Semester 1</th>
+		<th>Semester 2</th>
 		<th>Photos Allowed</th>
 		<th>Email Allowed</th>
 	  </tr>	
@@ -34,7 +35,8 @@
 	  while($row = mysqli_fetch_assoc($result)){
 		  echo "<tr><td>" . $row["ID"] . "</td><td>" . $row["first_name"] . "</td><td>" . $row["last_name"] .
 			  "</td><td>" . $row["member_type"] . "</td><td>" . $row["email"] . "</td><td>" . $row["signup_date"] .
-			  "</td><td>" . $row["payment_date"] . "</td><td>" . $row["payment_status"] .
+			  "</td><td>" . $row["payment_date"] . "</td><td>" . $row["semester_1"] .
+			  "</td><td>" . $row["semester_2"] . "</td>" .
 			  "</td><td>" . $row["photo_allowed"] . "</td><td>" . $row["email_allowed"] ."</td></tr>";
 	  }
 	?>
