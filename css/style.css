@@ -76,3 +76,11 @@ input {
 fieldset {
 	display: inline-block;
 }
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}

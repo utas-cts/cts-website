@@ -6,7 +6,8 @@ CREATE TABLE members(
 	email VARCHAR(255) NOT NULL,
 	signup_date DATE NOT NULL,
 	payment_date DATE,
-	payment_status ENUM('First_Semester','Second_Semester','Both','None') NOT NULL,
+	semester_1 BOOLEAN NOT NULL DEFAULT 0,
+	semester_2 BOOLEAN NOT NULL DEFAULT 0,
 	photo_allowed BOOLEAN NOT NULL,
 	email_allowed BOOLEAN NOT NULL,
 	primary key (ID)
