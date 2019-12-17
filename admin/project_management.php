@@ -71,11 +71,12 @@
 	<h2>Archive Project</h2>
 	<form action='./archive_project.php' method='post'>
     <lable>
-      ID
+      Id
       <br>
       <input name='id'>
-    </lable>
+	</lable>
 	<br>
+	<button>Submit</button>
 	</form>
     </div>
     </div>
