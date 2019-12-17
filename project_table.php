@@ -11,9 +11,9 @@ $table = mysqli_query($mysqli, $event_query);
 if (mysqli_num_rows($table) > 0) {
 	echo '<table><tr>';
 	if($_SESSION['authorised'] == true){
-		echo '<td>Id</td>';
+		echo '<th>Id</th><th>Archived</th>';
 	}
-		echo '<td>Name</td><td>Description</td><td>Link</td>
+		echo '<th>Name</th><th>Description</th><th>Link</th>
 		  </tr>';
 	while ($row = mysqli_fetch_assoc($table)) {
 		if($row['archived'] == false || $_SESSION['authorised'] == true){
@@ -24,7 +24,7 @@ if (mysqli_num_rows($table) > 0) {
 				$link = '<a href="' . $link . '">' . $link . '</a>';
 			}
 			if($_SESSION['authorised'] == true){
-				echo '<tr><td>' . $row['ID'] . '</td><td>';
+				echo '<tr><td>' . $row['ID'] . '</td><td>' . $row['archived'] . '</td><td>';
 			}else{
 				echo '<tr><td>';
 			}
