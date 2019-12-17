@@ -67,7 +67,16 @@
     <button>Submit</button>
     </form>
     </div>
-    <div class='column'>
+	<div class='column'>
+	<h2>Archive Project</h2>
+	<form action='./archive_project.php' method='post'>
+    <lable>
+      ID
+      <br>
+      <input name='id'>
+    </lable>
+	<br>
+	</form>
     </div>
     </div>
   </body>
