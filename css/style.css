@@ -64,6 +64,10 @@ table, td {
 	text-align: center;
 }
 
+td {
+	max-width: 30ch
+}
+
 label {
 	color: var(--text_colour);
 }
