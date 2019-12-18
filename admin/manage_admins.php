@@ -21,7 +21,7 @@
             echo '<p>No admin accounts exist except the default</p>';
         }
         while ($row = $result->fetch_assoc()) {
-            echo '<ol>' . $row['username'] . '</ol>';
+            echo '<ol>' . htmlspecialchars($row['username']) . '</ol>';
         }
     ?>
     <div class='row'>
