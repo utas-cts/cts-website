@@ -1,5 +1,5 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'].'/include/check_login.php';
+    require 'check_login.php';
 ?>
 <!doctype html>
 <html lang='en'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <?php
-      include $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+      include 'navbar.php';
     ?>
     <h2>Admin Control Panel</h2>
     <a href='./member_list.php'><p>Member list</p></a>

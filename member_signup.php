@@ -9,7 +9,7 @@
   </head>
   <body>
     <?php
-      include('include/navbar.php');
+      include('navbar.php');
     ?>
     <form action="signup.php" method="post">
       <div id="user_details">

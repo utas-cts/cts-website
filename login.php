@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require('include/db_connect.php');
+    require('db_connect.php');
     $username = $_POST['username'];
     $password = $_POST['password'];
 

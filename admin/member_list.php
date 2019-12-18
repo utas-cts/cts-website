@@ -1,5 +1,5 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'] . '/include/check_login.php';
+    require 'check_login.php';
 ?>
 <!doctype html>
 <html lang='en'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <?php
-      include $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+      include 'navbar.php';
     ?>
     <br>
     <table>
@@ -29,7 +29,7 @@
         <th>Email Allowed</th>
       </tr> 
     <?php
-      require $_SERVER['DOCUMENT_ROOT'] . '/include/db_connect.php';
+      require 'db_connect.php';
       $query = 'SELECT * FROM members';
       $result = mysqli_query($mysqli, $query);
       while ($row = mysqli_fetch_assoc($result)) {

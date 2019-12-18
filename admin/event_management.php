@@ -1,5 +1,5 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'] . '/include/check_login.php';
+    require 'check_login.php';
 ?>
 <!doctype html>
 <html lang='en'>
@@ -11,11 +11,11 @@
   </head>
   <body>
     <?php
-        include $_SERVER['DOCUMENT_ROOT'] . '/include/navbar.php';
+        include 'navbar.php';
     ?>
     <h2>Events</h2>
     <?php
-        include $_SERVER['DOCUMENT_ROOT'] . '/include/event_table.php';
+        include 'event_table.php';
     ?>
     <div class='row'>
     <div class='column'>
