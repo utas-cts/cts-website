@@ -9,11 +9,11 @@
   </head>
   <body>
     <?php
-      include('navbar.php');
+      include('include/navbar.php');
     ?>
     <h2>Todays Date: <?php echo date('M dS')?></h2>
     <?php
-          include('event_table.php');
+          include('include/event_table.php');
     ?>
     <p>Please contact us if you wish to suggest an event at the <a href="contact.php">contacts page</a></p>
   </body>
