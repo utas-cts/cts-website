@@ -1,5 +1,5 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'] . '/db_connect.php';
+	require 'db_connect.php';
     if ($_POST['may_change'] == 'yes') {
         $may_change = 1;
     } else {
