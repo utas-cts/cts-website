@@ -1,5 +1,5 @@
 <?php
-require('db_connect.php');
+require 'db_connect.php';
 
 if ($_POST['photograph_allowed'] === 'on') {
     $photo_allowed = 1;
