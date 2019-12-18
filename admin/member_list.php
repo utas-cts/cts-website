@@ -1,5 +1,5 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'] . '/check_login.php';
+    require 'check_login.php';
 ?>
 <!doctype html>
 <html lang='en'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <?php
-      include $_SERVER['DOCUMENT_ROOT'] . '/navbar.php';
+      include 'navbar.php';
     ?>
     <br>
     <table>
@@ -29,12 +29,13 @@
         <th>Email Allowed</th>
       </tr> 
     <?php
-      require $_SERVER['DOCUMENT_ROOT'] . '/db_connect.php';
+      require 'db_connect.php';
       $query = 'SELECT * FROM members';
       $result = mysqli_query($mysqli, $query);
       while ($row = mysqli_fetch_assoc($result)) {
-          echo '<tr><td>' . $row['ID'] . '</td><td>' . $row['first_name'] . '</td><td>' . $row['last_name'] .
-              '</td><td>' . $row['member_type'] . '</td><td>' . $row['email'] . '</td><td>' . $row['signup_date'] .
+		  echo '<tr><td>' . $row['ID'] . '</td><td>' . htmlspecialchars($row['first_name']) . '</td><td>' .
+			  htmlspecialchars($row['last_name']) . '</td><td>' . $row['member_type'] . '</td><td>' .
+			  htmlspecialchars($row['email']) . '</td><td>' . $row['signup_date'] .
               '</td><td>' . $row['payment_date'] . '</td><td>' . $row['semester_1'] .
               '</td><td>' . $row['semester_2'] . '</td>' .
               '</td><td>' . $row['photo_allowed'] . '</td><td>' . $row['email_allowed'] .'</td></tr>';

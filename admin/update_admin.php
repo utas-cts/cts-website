@@ -1,6 +1,6 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'].'/check_login.php';
-    require $_SERVER['DOCUMENT_ROOT'].'/db_connect.php';
+    require 'check_login.php';
+    require 'db_connect.php';
 
     $query = $mysqli->prepare("UPDATE admins SET hashed_password = ? WHERE username=? and username!='admin'");
     $hash = password_hash($_POST['new_password'], PASSWORD_DEFAULT);

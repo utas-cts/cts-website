@@ -1,6 +1,9 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'].'/db_connect.php';
-    require $_SERVER['DOCUMENT_ROOT'].'/check_login.php';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+    require 'db_connect.php';
+    require 'check_login.php';
 
     $query = $mysqli->prepare('SELECT semester_1, semester_2 from members WHERE id=?');
     $query->bind_param('i', $_POST['id']);

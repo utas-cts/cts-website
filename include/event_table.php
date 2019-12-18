@@ -33,8 +33,8 @@ if (mysqli_num_rows($table) > 0) {
         if ($_SESSION['authorised'] == true) {
             echo '<td>' . $row['id'] . '</td>';
         }
-        echo '<td>' . $row['name']. '</td><td>' . date_format(date_create($row['event_datetime']), 'D M dS ga') . '</td><td>' .
-            $row['description'] . '</td><td>' . $row['location'] . '</td><td>' . $may_change
+        echo '<td>' . htmlspecialchars($row['name']) . '</td><td>' . date_format(date_create($row['event_datetime']), 'D M dS ga') . '</td><td>' .
+            htmlspecialchars($row['description']) . '</td><td>' . htmlspecialchars($row['location']) . '</td><td>' . $may_change
             . '</td><td>$' . $row['cost'] . '</td>';
         echo '</tr>';
     }
