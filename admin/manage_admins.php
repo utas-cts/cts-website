@@ -8,12 +8,12 @@
   </head>
  <body>
     <?php
-        require $_SERVER['DOCUMENT_ROOT'] . '/check_login.php';
-        include $_SERVER['DOCUMENT_ROOT'] . '/navbar.php';
+        require 'check_login.php';
+        include 'navbar.php';
     ?>
     <h2>Admins</h2>
     <?php
-        require $_SERVER['DOCUMENT_ROOT'] . '/db_connect.php';
+        require 'db_connect.php';
         $query = $mysqli->prepare("SELECT username from admins where username!='admin'");
         $query->execute();
         $result = $query->get_result();
