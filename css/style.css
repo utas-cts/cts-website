@@ -77,6 +77,11 @@ input {
 	color: var(--text_colour);
 }
 
+textarea{
+	background-color: var(--background_colour);
+	color: var(--text_colour);
+}
+
 fieldset {
 	display: inline-block;
 }

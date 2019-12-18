@@ -31,7 +31,7 @@
     <lable>
       Project description*
       <br>
-      <input name='description' maxlength='512' required>
+	  <textarea name='description' maxlength='512' required></textarea>
     </lable>
     <br>
     <lable>
