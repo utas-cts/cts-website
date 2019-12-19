@@ -38,7 +38,16 @@
           <input type='submit' name='submit' value='Upload'>
         </form>
       </div>
-      <div class='column'>
+	  <div class='column'>
+	    <h2>Poster view</h2>
+        <?php
+			require 'db_connect.php';
+			$query = 'SELECT filename from posters';
+			$result = mysqli_query($mysqli, $query);
+			while ($row = mysqli_fetch_assoc($result)) {
+				echo "<a href='posters/" . $row['filename'] . "'>" . $row['filename'] . "</a>";
+			}
+        ?>
       </div>
     </div>
   </body>
