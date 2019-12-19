@@ -45,7 +45,7 @@
 			$query = 'SELECT filename from posters';
 			$result = mysqli_query($mysqli, $query);
 			while ($row = mysqli_fetch_assoc($result)) {
-				echo "<a href='posters/" . $row['filename'] . "'>" . $row['filename'] . "</a>";
+				echo "<a href='posters/" . $row['filename'] . "'><p>" . $row['filename'] . "</p></a>";
 			}
         ?>
       </div>
