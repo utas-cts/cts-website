@@ -16,6 +16,7 @@
 	}
 	include 'navbar.php';
 	$uploadOk = true;
+	$file_exists = false;
 	$poster_directory = 'posters/';
 	$check = getimagesize($_FILES['poster_image']['tmp_name']);
 	if($check !== false){
@@ -28,7 +29,7 @@
 		$poster_file = $poster_directory . $poster_filename;
 		if(file_exists($poster_file)){
 			echo "File exists";
-			$uploadOk = false;
+			$file_exists = true;
 		}
 		if($_FILES['poster_image']['size'] > 20000000){
 			echo "File is too large";
@@ -40,13 +41,20 @@
 		$uploadOk = false;
 	}
 	if($uploadOk){
-		if(move_uploaded_file($tempfile_name, $poster_file)){
+		if($file_exists){
 			$query = $mysqli->prepare('INSERT INTO posters (filename, event_date, event_type) values (?, ?, ?)');
 			$query->bind_param('sss', $poster_filename, $_POST['event_date'], $_POST['event_type']);
 			$query->execute();
 			header('Location: index.php');
 		}else{
-			echo 'File could not be moved. Contact the admin';
+			if(move_uploaded_file($tempfile_name, $poster_file)){
+				$query = $mysqli->prepare('INSERT INTO posters (filename, event_date, event_type) values (?, ?, ?)');
+				$query->bind_param('sss', $poster_filename, $_POST['event_date'], $_POST['event_type']);
+				$query->execute();
+				header('Location: index.php');
+			}else{
+				echo 'File could not be moved. Contact the admin';
+			}
 		}
 	}
 ?>
