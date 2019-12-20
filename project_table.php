@@ -23,11 +23,11 @@ if (mysqli_num_rows($table) > 0) {
 				$link = '<a href="' . $link . '">' . $link . '</a>';
 			}
 			if($_SESSION['authorised'] == true){
-				echo '<tr><td>' . $row['ID'] . '</td><td>' . $row['archived'] . '</td><td>';
+				echo '<tr><td data-label="ID:">' . $row['ID'] . '</td><td data-label="Archived:">' . $row['archived'] . '</td><td>';
 			}else{
-				echo '<tr><td>';
+				echo '<tr><td data-label="Name:">';
 			}
-			echo $row['name'] . '</td><td>' . $row['description'] . '</td><td>' . $link . '</td>';
+			echo $row['name'] . '</td><td data-label="Description:">' . $row['description'] . '</td><td data-label="Link:">' . $link . '</td>';
 		}
     echo '</table>';
 } else {
