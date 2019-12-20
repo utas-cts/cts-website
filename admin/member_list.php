@@ -6,12 +6,13 @@
   <head>
     <meta charset='UTF-8'>
     <title>Member List</title>
-    <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=yes'/>
+    <meta name='viewport' content='width=device-width,initial-scale=1,
+      user-scalable=yes'/>
     <link rel='stylesheet' href='/css/style.css'>
   </head>
   <body>
     <?php
-      include 'navbar.php';
+      require 'navbar.php';
     ?>
     <br>
     <table>
@@ -32,14 +33,17 @@
       require 'db_connect.php';
       $query = 'SELECT * FROM members';
       $result = mysqli_query($mysqli, $query);
-      while ($row = mysqli_fetch_assoc($result)) {
-		  echo '<tr><td>' . $row['ID'] . '</td><td>' . htmlspecialchars($row['first_name']) . '</td><td>' .
-			  htmlspecialchars($row['last_name']) . '</td><td>' . $row['member_type'] . '</td><td>' .
-			  htmlspecialchars($row['email']) . '</td><td>' . $row['signup_date'] .
-              '</td><td>' . $row['payment_date'] . '</td><td>' . $row['semester_1'] .
-              '</td><td>' . $row['semester_2'] . '</td>' .
-              '</td><td>' . $row['photo_allowed'] . '</td><td>' . $row['email_allowed'] .'</td></tr>';
-      }
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo '<tr><td>' . $row['ID'] . '</td><td>' . htmlspecialchars(
+            $row['first_name']
+        ) . '</td><td>' .
+        htmlspecialchars($row['last_name']) . '</td><td>' . $row['member_type'] .
+        '</td><td>' . htmlspecialchars($row['email']) . '</td><td>' .
+        $row['signup_date'] . '</td><td>' . $row['payment_date'] . '</td><td>' .
+        $row['semester_1'] . '</td><td>' . $row['semester_2'] . '</td>' .
+        '</td><td>' . $row['photo_allowed'] . '</td><td>' . $row['email_allowed'] .
+        '</td></tr>';
+    }
     ?>
     </table>
     <h2>Update payment</h2>
