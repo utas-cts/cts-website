@@ -4,12 +4,13 @@
   <head>
     <meta charset="UTF-8">
     <Title>Member Signup</Title>
-    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+    <meta name="viewport" content ="width=device-width,initial-scale=1,
+    user-scalable=yes" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <?php
-      include('navbar.php');
+      require 'navbar.php';
     ?>
     <form action="signup.php" method="post">
       <div id="user_details">
@@ -38,7 +39,8 @@
             <i>Staff</i>
           </label>
           <label>
-            <input id="student" name="member_type" value="Student" type="radio" required>
+              <input id="student" name="member_type" value="Student"
+              type="radio" required>
             <i>Student</i>
           </label>
         </fieldset>
@@ -47,12 +49,14 @@
       <div id="permissions">
         <label>
           <input id="photograph_allowed" name="photograph_allowed" type="checkbox">
-          Check if you will allow the CTS to take your photo at events and use them on social media
+          Check if you will allow the CTS to take your photo at 
+          events and use them on social media
         </label>
         <br>
         <label>
           <input id="email_allowed" name="email_allowed" type="checkbox">
-          Check if you will allow the CTS to contact you via email (You can opt out any time)
+          Check if you will allow the CTS to contact you via email 
+          (You can opt out any time)
         </label>
       </div>
 
