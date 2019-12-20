@@ -22,7 +22,10 @@ if (!isset($_POST['submit'])) {
 if ($check !== false) {
     $tempfile_name=$_FILES['poster_image']['tmp_name'];
     $convertedImage = new Imagick($tempfile_name);
-    $convertedImage->setImageFormat('jpg');
+	$convertedImage->setImageFormat('jpg');
+	if($convertedImage->getImageWidth() > 1500 || $convertedImage->getImageHeight() > 1500){
+		$convertedImage->resizeImage(1500,1500,imagick::FILTER_CATROM,1,true);
+	}
     $convertedImage->writeImages($tempfile_name, true);
     $hash = sha1_file($tempfile_name);
     $poster_filename = $hash . '.jpg';
