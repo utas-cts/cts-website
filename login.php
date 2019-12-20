@@ -31,4 +31,3 @@ if ($query->num_rows > 0) {
 }
 header('Location: /login_page.php');
 die();
-?>

@@ -47,4 +47,3 @@ if (mysqli_num_rows($table) > 0) {
 } else {
     echo '<h3>There are no events scheduled in the next two weeks.</h3>';
 }
-?>

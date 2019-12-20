@@ -13,8 +13,12 @@ $query = $mysqli->prepare(
 );
 
 $query->bind_param(
-    'ssssis', $_POST['name'], $datetime,
-    $_POST['description'], $_POST['location'], $may_change,
+    'ssssis',
+    $_POST['name'],
+    $datetime,
+    $_POST['description'],
+    $_POST['location'],
+    $may_change,
     $_POST['cost']
 );
 

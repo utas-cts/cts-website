@@ -37,7 +37,7 @@
         echo '<tr><td>' . $row['ID'] . '</td><td>' . htmlspecialchars(
             $row['first_name']
         ) . '</td><td>' .
-        htmlspecialchars($row['last_name']) . '</td><td>' . $row['member_type'] . 
+        htmlspecialchars($row['last_name']) . '</td><td>' . $row['member_type'] .
         '</td><td>' . htmlspecialchars($row['email']) . '</td><td>' .
         $row['signup_date'] . '</td><td>' . $row['payment_date'] . '</td><td>' .
         $row['semester_1'] . '</td><td>' . $row['semester_2'] . '</td>' .

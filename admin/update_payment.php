@@ -13,17 +13,17 @@ $query = $mysqli->prepare(
 	semester_2=? WHERE id=?'
 );
 switch ($_POST['payment_type']) {
-case 'First_Semester':
-    $semester_1 = 1;
-    $semester_2 = $row['semester_2'];
-    break;
-case 'Second_Semester':
-    $semester_1 = $row['semester_1'];
-    $semester_2 = 1;
-    break;
-default:
-    $semester_1 = 1;
-    $semester_2 = 1;
+    case 'First_Semester':
+        $semester_1 = 1;
+        $semester_2 = $row['semester_2'];
+        break;
+    case 'Second_Semester':
+        $semester_1 = $row['semester_1'];
+        $semester_2 = 1;
+        break;
+    default:
+        $semester_1 = 1;
+        $semester_2 = 1;
 }
 $query->bind_param('siii', $date, $semester_1, $semester_2, $_POST['id']);
 $query->execute();
