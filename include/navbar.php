@@ -3,6 +3,7 @@ echo "
 <ul class='navbar'>
   <li class='navbar'><a href='/index.php'>Home</a></li>
   <li class='navbar'><a href='/events.php'>Events</a></li>
+  <li class='navbar'><a href='/projects.php'>Projects</a></li>
   <li class='navbar'><a href='/contact.php'>Contacts</a></li>
   <li class='navbar'><a href='/member_signup.php'>Signup</a></li>";
 if ($_SESSION['authorised']) {

@@ -6,15 +6,15 @@
     <title>CTS Projects</title>
     <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
     <?php
-      include('navbar.php');
+		require 'navbar.php';
     ?>
     <h2></h2>
     <?php
-          include('project_table.php');
+		require 'project_table.php';
     ?>
   </body>
 </html>

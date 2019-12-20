@@ -31,7 +31,7 @@
     <lable>
       Event description
       <br>
-	  <textarea name='description' maxlength='512' required></textarea>
+      <textarea name='description' maxlength='512' required></textarea>
     </lable>
     <br>
     <lable>
