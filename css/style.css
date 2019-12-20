@@ -64,6 +64,10 @@ table, td {
     text-align: center;
 }
 
+td {
+	max-width: 30ch
+}
+
 label {
     color: var(--text_colour);
 }
@@ -71,6 +75,11 @@ label {
 input {
     background-color: var(--background_colour);
     color: var(--text_colour);
+}
+
+textarea{
+	background-color: var(--background_colour);
+	color: var(--text_colour);
 }
 
 fieldset {
