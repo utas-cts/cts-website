@@ -38,7 +38,8 @@ if (mysqli_num_rows($table) > 0) {
         }
         echo '<td data-label="Event:">' . htmlspecialchars($row['name']) . '</td><td data-label="Date">' .
         date_format(date_create($row['event_datetime']), 'D M dS ga') .
-        '</td><td data-label="Description:">' . htmlspecialchars($row['description']) . '</td><td data-label="Location:">' .
+        '</td><td data-label="Description:">' .
+        htmlspecialchars($row['description']) . '</td><td data-label="Location:">' .
         htmlspecialchars($row['location']) . '</td><td data-label="May Change">' . $may_change
             . '</td><td data-label="Cost:">$' . $row['cost'] . '</td>';
         echo '</tr>';
