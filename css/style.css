@@ -1,10 +1,10 @@
 :root{
-	--text_colour: #aaaaaa;
-	--hover_colour: #151515;
-	--background_colour: #111111;
-	--border_colour: #888888;
-	--hyperlink_colour: #aaaaaa;
-	--nav_colour: #333;
+    --text_colour: #aaaaaa;
+    --hover_colour: #151515;
+    --background_colour: #111111;
+    --border_colour: #888888;
+    --hyperlink_colour: #aaaaaa;
+    --nav_colour: #333;
 }
 
 ul.navbar {
@@ -16,7 +16,7 @@ ul.navbar {
 }
 
 li {
-	float: left;
+    float: left;
 }
 
 li.navbar a {
@@ -28,53 +28,53 @@ li.navbar a {
 }
 
 h1, h2, h3, h4, h5 {
-	color: var(--text_colour);
+    color: var(--text_colour);
 }
 
 a {
-	color: var(--text_colour);
+    color: var(--text_colour);
 }
 
 p {
-	color: var(--text_colour);
+    color: var(--text_colour);
 }
 
 li a:hover {
-	background-color: var(--hover_colour);
+    background-color: var(--hover_colour);
 }
 
 body {
-	background-color: var(--background_colour);
-	color: var(--text_colour);
-	margin: 0 2vw 0 2vw;
+    background-color: var(--background_colour);
+    color: var(--text_colour);
+    margin: 0 2vw 0 2vw;
 }
 
 table {
-	border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 tr:hover {
-	background-color: var(--hover_colour);
+    background-color: var(--hover_colour);
 }
 
 table, td {
-	color: var(--text_colour);
-	padding: 5px;
-	border: 1px solid var(--border_colour);
-	text-align: center;
+    color: var(--text_colour);
+    padding: 5px;
+    border: 1px solid var(--border_colour);
+    text-align: center;
 }
 
 label {
-	color: var(--text_colour);
+    color: var(--text_colour);
 }
 
 input {
-	background-color: var(--background_colour);
-	color: var(--text_colour);
+    background-color: var(--background_colour);
+    color: var(--text_colour);
 }
 
 fieldset {
-	display: inline-block;
+    display: inline-block;
 }
 
 .row {

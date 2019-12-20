@@ -6,16 +6,17 @@
   <head>
     <meta charset='UTF-8'>
     <title>Event Management</title>
-    <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=yes'/>
+    <meta name='viewport' content='width=device-width,initial-scale=1,
+    user-scalable=yes'/>
     <link rel='stylesheet' href='/css/style.css'>
   </head>
   <body>
     <?php
-        include 'navbar.php';
+        require 'navbar.php';
     ?>
     <h2>Events</h2>
     <?php
-        include 'event_table.php';
+        require 'event_table.php';
     ?>
     <div class='row'>
     <div class='column'>

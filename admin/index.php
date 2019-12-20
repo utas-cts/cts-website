@@ -6,12 +6,13 @@
   <head>
     <meta charset='UTF-8'>
     <title>Admin</title>
-    <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=yes'/>
+    <meta name='viewport' content='width=device-width,initial-scale=1,
+    user-scalable=yes'/>
     <link rel='stylesheet' href='/css/style.css'>
   </head>
   <body>
     <?php
-      include 'navbar.php';
+      require 'navbar.php';
     ?>
     <h2>Admin Control Panel</h2>
     <a href='./member_list.php'><p>Member list</p></a>

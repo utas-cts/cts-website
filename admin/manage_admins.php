@@ -3,26 +3,29 @@
   <head>
     <meta charset='UTF-8'>
     <title>Admin Management</title>
-    <meta name='viewport' content ='width=device-width,initial-scale=1,user-scalable=yes' />
+    <meta name='viewport' content ='width=device-width,initial-scale=1,
+    user-scalable=yes' />
     <link rel='stylesheet' href='/css/style.css'>
   </head>
  <body>
     <?php
         require 'check_login.php';
-        include 'navbar.php';
+        require 'navbar.php';
     ?>
     <h2>Admins</h2>
     <?php
         require 'db_connect.php';
-        $query = $mysqli->prepare("SELECT username from admins where username!='admin'");
+    $query = $mysqli->prepare(
+        "SELECT username from admins where username!='admin'"
+    );
         $query->execute();
         $result = $query->get_result();
-        if ($result->num_rows === 0) {
-            echo '<p>No admin accounts exist except the default</p>';
-        }
-        while ($row = $result->fetch_assoc()) {
-            echo '<ol>' . htmlspecialchars($row['username']) . '</ol>';
-        }
+    if ($result->num_rows === 0) {
+        echo '<p>No admin accounts exist except the default</p>';
+    }
+    while ($row = $result->fetch_assoc()) {
+        echo '<ol>' . htmlspecialchars($row['username']) . '</ol>';
+    }
     ?>
     <div class='row'>
       <div class='column'>
