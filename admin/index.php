@@ -17,8 +17,8 @@
     <h2>Admin Control Panel</h2>
     <a href='./member_list.php'><p>Member list</p></a>
     <a href='./event_management.php'><p>Event Management</p></a>
-	<a href='./project_management.php'><p>Project Management</p></a>
+    <a href='./project_management.php'><p>Project Management</p></a>
     <a href='./manage_admins.php'><p>Manage Admins</p></a>
-	<a href='./manage_posters.php'><p>Manage Posters</p></a>
+    <a href='./manage_posters.php'><p>Manage Posters</p></a>
   </body>
 </html>

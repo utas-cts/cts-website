@@ -6,15 +6,20 @@
     <title>CTS Projects</title>
     <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
     <?php
-      include('navbar.php');
+        require 'navbar.php';
     ?>
-    <h2></h2>
+    <h2>Current CTS Projects</h2>
     <?php
-          include('project_table.php');
+        require 'project_table.php';
     ?>
+    <p>
+    If you would like to suggest a project or have a project you would
+    like people to contribute to send us a message from the
+    <a href="contact.php">Contacts page</a>
+    </p>
   </body>
 </html>

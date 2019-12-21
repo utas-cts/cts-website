@@ -8,11 +8,11 @@
 }
 
 ul.navbar {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: var(--nav_colour);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav_colour);
 }
 
 li {
@@ -20,11 +20,11 @@ li {
 }
 
 li.navbar a {
-	display: block;
-	color: var(--hyperlink_colour);
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+    display: block;
+    color: var(--hyperlink_colour);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,7 +65,7 @@ table, td {
 }
 
 td {
-	max-width: 30ch
+    max-width: 30ch
 }
 
 label {
@@ -78,8 +78,8 @@ input {
 }
 
 textarea{
-	background-color: var(--background_colour);
-	color: var(--text_colour);
+    background-color: var(--background_colour);
+    color: var(--text_colour);
 }
 
 fieldset {
