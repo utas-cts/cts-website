@@ -21,6 +21,7 @@ only screen and (max-width: 760px),
 		text-align: left;
         position: relative;
         padding-left: 30%;
+		max-width: none;
     }
     
     td:before {
