@@ -1,24 +1,27 @@
 @media
 only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
+(min-device-width: 420px) and (max-device-width: 1024px)  {
 
     /* Force table to not be like tables anymore */
     table, thead, tbody, th, td, tr {
         display: block;
+		border: none;
+		border-collapse: collapse;
+		width: auto;
     }
     
-    /* Hide table headers (but not display: none;, for accessibility) */
     th {
         display: none;
     }
-    tr { border: 1px solid #aaa; }
     
     td {
         /* Behave  like a "row" */
-        border: none;
+        border: 1px solid #aaa;
         border-bottom: 1px solid #aaa;
+		text-align: left;
         position: relative;
-        padding-left: 40%;
+        padding-left: 30%;
+		max-width: none;
     }
     
     td:before {
