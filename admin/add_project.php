@@ -1,5 +1,6 @@
 <?php
 require 'db_connect.php';
+require 'check_login.php';
 if ($_POST['may_change'] == 'yes') {
     $may_change = 1;
 } else {
