@@ -44,14 +44,30 @@ if ($check !== false) {
 }
 if ($uploadOk) {
     if ($file_exists) {
-        $query = $mysqli->prepare('INSERT INTO posters (filename, event_date, event_type) values (?, ?, ?)');
-        $query->bind_param('sss', $poster_filename, $_POST['event_date'], $_POST['event_type']);
+        $query = $mysqli->prepare(
+            'INSERT INTO posters (filename, event_date, event_type, short_name) values (?, ?, ?, ?)'
+        );
+        $query->bind_param(
+            'ssss',
+            $poster_filename,
+            $_POST['event_date'],
+            $_POST['event_type'],
+            $_POST['short_name']
+        );
         $query->execute();
         header('Location: index.php');
     } else {
         if (move_uploaded_file($tempfile_name, $poster_file)) {
-            $query = $mysqli->prepare('INSERT INTO posters (filename, event_date, event_type) values (?, ?, ?)');
-            $query->bind_param('sss', $poster_filename, $_POST['event_date'], $_POST['event_type']);
+            $query = $mysqli->prepare(
+                'INSERT INTO posters (filename, event_date, event_type, short_name) values (?, ?, ?, ?)'
+            );
+            $query->bind_param(
+                'ssss',
+                $poster_filename,
+                $_POST['event_date'],
+                $_POST['event_type'],
+                $_POST['short_name']
+            );
             $query->execute();
             header('Location: index.php');
         } else {
