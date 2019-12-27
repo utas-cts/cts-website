@@ -16,19 +16,19 @@
       <div id="user_details">
         <label for="id">Student/Staff ID</label>
         <br>
-        <input type="number" id="id" name="id" required>
+        <input type="number" id="id" name="id" max="999999999" required>
         <br>
         <label for="first_name">First Name</label>
         <br>
-        <input id="first_name" name="first_name" required>
+        <input type="text" id="first_name" name="first_name" maxLength="32" required>
         <br>
         <label for="last_name">Last Name</label>
         <br>
-        <input id="last_name" name="last_name" required>
+        <input type="text" id="last_name" name="last_name" maxLength="32" required>
         <br>
         <label for="email">Utas e-mail address</label>
         <br>
-        <input id="email" name="email" type="email" required>
+        <input id="email" name="email" type="email" maxLength="255" required>
       </div>
 
       <div id="member_type">

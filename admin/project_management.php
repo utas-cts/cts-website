@@ -26,43 +26,43 @@
     <lable>
       Project name*
       <br>
-      <input name='name' maxlength='128' required>
+      <input name='name' maxLength='128' required>
     </lable>
     <br>
     <lable>
       Project description*
       <br>
-      <textarea name='description' maxlength='512' required></textarea>
+      <textarea name='description' maxLength='512' required></textarea>
     </lable>
     <br>
     <lable>
       Project primary contact name*
       <br>
-      <input name='primary_contact_name' maxlength='128' required>
+      <input name='primary_contact_name' maxLength='128' required>
     </lable>
     <br>
     <lable>
       Project primary contact email*
       <br>
-      <input type='email' name='primary_contact_email' required>
+      <input type='email' name='primary_contact_email' maxLength='255' required>
     </lable>
     <br>
     <lable>
       Project general email*
       <br>
-      <input type='email' name='general_email' required>
+      <input type='email' name='general_email' maxLength='255' required>
     </lable>
     <br>
     <lable>
       Project link
       <br>
-      <input name='project_link'>
+      <input name='project_link' maxLength='255'>
     </lable>
     <br>
     <lable>
       Project details link
       <br>
-      <input name='details_link'>
+      <input name='details_link' maxLength='255'>
     </lable>
     <br>
     <button>Submit</button>

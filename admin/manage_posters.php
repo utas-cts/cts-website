@@ -32,7 +32,7 @@
           <label>
             Event Type
             <br>
-            <input name='event_type' required>
+            <input name='event_type' maxLength='64' required>
           </label>
           </div>
           <input type='submit' name='submit' value='Upload'>
