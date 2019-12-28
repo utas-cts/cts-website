@@ -16,8 +16,8 @@ if ($query->num_rows > 0) {
         $_SESSION['authorised'] = true;
 
         //Change hash if php has updated defaults
-        if (password_needs_rehash($hashed_password, PASSWORD_DEFAULT)) {
-            $new_hash = password_hash($password, PASSWORD_DEFAULT);
+        if (password_needs_rehash($hashed_password, PASSWORD_ARGON2I)) {
+            $new_hash = password_hash($password, PASSWORD_ARGON2I);
             $query = $mysqli->prepare(
                 'UPDATE admins SET hashed_password=? where username=?'
             );

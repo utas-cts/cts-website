@@ -34,7 +34,14 @@
             <br>
             <input name='event_type' maxLength='64' required>
           </label>
+          <br>
+          <label>
+            Short Name
+            <br>
+            <input name='short_name' maxLength='64' required>
+          </label>
           </div>
+          <br>
           <input type='submit' name='submit' value='Upload'>
         </form>
       </div>
@@ -42,10 +49,11 @@
         <h2>Poster view</h2>
         <?php
             require 'db_connect.php';
-            $query = 'SELECT DISTINCT filename from posters';
+            $query = 'SELECT filename, event_date, short_name from posters';
             $result = mysqli_query($mysqli, $query);
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "<a href='posters/" . $row['filename'] . "'><p>" . $row['filename'] . "</p></a>";
+            echo "<a href='posters/" . $row['filename'] . "'><p>" .
+                $row['event_date'] . ' - ' .  $row['short_name'] . "</p></a>";
         }
         ?>
       </div>
