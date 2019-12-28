@@ -34,7 +34,7 @@
           <label>
             Username
             <br>
-            <input type='text' name='username' required>
+            <input type='text' name='username' maxLength="32" required>
           </label>
           <br>
           <label>
@@ -58,7 +58,7 @@
           <label>
             New Password
             <br>
-            <input type='text' name='new_password' required>
+            <input type='password' name='new_password' required>
           </label>
           <br>
           <button>Submit</button>

@@ -25,19 +25,19 @@
     <lable>
       Event name
       <br>
-      <input name='name' maxlength='128' required>
+      <input name='name' maxLength='128' required>
     </lable>
     <br>
     <lable>
       Event description
       <br>
-      <textarea name='description' maxlength='512' required></textarea>
+      <textarea name='description' maxLength='512' required></textarea>
     </lable>
     <br>
     <lable>
       Event location
       <br>
-      <input name='location' maxlength='128' required>
+      <input name='location' maxLength='128' required>
     </lable>
     <br>
     <lable>
