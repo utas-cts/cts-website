@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <div id="page-container">
     <?php
       require 'navbar.php';
     ?>
+    <div id="content-wrap">
     <form action="login.php" method="post">
       <label>
         Username:
@@ -26,5 +28,10 @@
       </label>
       <button>Login</button>
     </form>
+    </div>
+    <?php
+      require 'footer.php';
+    ?>
+  </div>
   </body>
 </html>

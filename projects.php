@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
+  <div id="page-container">
     <?php
         require 'navbar.php';
     ?>
+    <div id="content-wrap">
     <h2>Current CTS Projects</h2>
     <?php
         require 'project_table.php';
@@ -21,5 +23,10 @@
     like people to contribute to send us a message from the
     <a href="contact.php">Contacts page</a>
     </p>
+    </div>
+    <?php
+        require 'footer.php';
+    ?>
+  </div>
   </body>
 </html>

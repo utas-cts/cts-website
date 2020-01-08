@@ -93,3 +93,34 @@ fieldset {
 .column {
   flex: 50%;
 }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 5rem;
+}
+
+#socialMedia {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--nav_colour);
+}
+
+.sm {
+    margin: 20px;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+.right {
+    float: right;
+    width: 50%;
+}

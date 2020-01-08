@@ -5,9 +5,9 @@ only screen and (max-width: 760px),
     /* Force table to not be like tables anymore */
     table, thead, tbody, th, td, tr {
         display: block;
-		border: none;
-		border-collapse: collapse;
-		width: auto;
+        border: none;
+        border-collapse: collapse;
+        width: auto;
     }
     
     th {
@@ -18,10 +18,10 @@ only screen and (max-width: 760px),
         /* Behave  like a "row" */
         border: 1px solid #aaa;
         border-bottom: 1px solid #aaa;
-		text-align: left;
+        text-align: left;
         position: relative;
         padding-left: 30%;
-		max-width: none;
+        max-width: none;
     }
     
     td:before {
