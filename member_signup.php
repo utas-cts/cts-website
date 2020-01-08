@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <div id="page-container">
     <?php
       require 'navbar.php';
     ?>
+    <div id="content-wrap">
     <form action="signup.php" method="post">
       <div id="user_details">
         <label for="id">Student/Staff ID</label>
@@ -62,5 +64,10 @@
 
       <button>Submit</button>
     </form>
+    </div>
+    <?php
+        require 'footer.php';
+    ?>
+  </div>
   </body>
 </html>

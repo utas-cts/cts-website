@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
+  <div id="page-container">
     <?php
       require 'navbar.php';
     ?>
+    <div id="content-wrap">
     <h2>Todays Date: <?php echo date('M dS')?></h2>
     <div style="overflow-x:auto;">
     <?php
@@ -22,5 +24,10 @@
     <p>Please contact us if you wish to suggest an event at the 
     <a href="contact.php">contacts page</a>
     </p>
+    </div>
+    <?php
+      require 'footer.php';
+    ?>
+    </div>
   </body>
 </html>

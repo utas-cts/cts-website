@@ -9,8 +9,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div id="page-container">
     <?php
-      require 'navbar.php';
+       require 'navbar.php';
     ?>
+    <div id="content-wrap">
+    </div>
+    <?php
+      require 'footer.php';
+    ?>
+    </div>
   </body>
 </html>
