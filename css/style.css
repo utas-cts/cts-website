@@ -27,6 +27,20 @@ li.navbar a {
     text-decoration: none;
 }
 
+li.navbar-image a {
+    display: block;
+    color: var(--hyperlink_colour);
+    text-align: center;
+    text-decoration: none;
+	padding: 0px 5px;
+}
+
+
+li.navbar-image img {
+	height: 3.3em;
+}
+
+
 h1, h2, h3, h4, h5 {
     color: var(--text_colour);
 }
@@ -100,10 +114,16 @@ fieldset {
 }
 
 #content-wrap {
-    padding-bottom: 5rem;
+    padding-bottom: 12rem;
+    padding-top: 1vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 #socialMedia {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    line-height: 1em;
     position: absolute;
     width: 100%;
     bottom: 0;

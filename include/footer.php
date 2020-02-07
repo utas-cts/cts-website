@@ -3,7 +3,7 @@ echo '<footer id="socialMedia">
     <div class="wrap">
         <div class="left">
 			<h3>Contact Us</h3>
-			<p>Email: cts.uts@gmail.com</p>
+			<p>Email: cts.utas@gmail.com</p>
         </div>
 
         <div class="right">
