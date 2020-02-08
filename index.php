@@ -14,6 +14,7 @@
         require 'navbar.php';
         ?>
     <div id="content-wrap">
+    <div id="introduction">
     <h2>UTAS Computing & Technology Society (CTS)</h2>
     <p>
     The CTS is a TUU affiliated society providing value
@@ -23,6 +24,16 @@
     <a href='member_signup.php'>signup</a> today
     to learn more.
     </p>
+    </div>
+    <div id="events">
+    <?php
+        require 'event_table.php';
+        if(!print_events(1)){
+            echo 'There are no events today. Visit the <a href="events.php">events page</a>
+                to see all scheduled events for the next two weeks';
+        }
+    ?>
+    </div>
     </div>
     <?php
         require 'footer.php';

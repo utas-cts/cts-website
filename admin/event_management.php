@@ -17,6 +17,7 @@
     <h2>Events</h2>
     <?php
         require 'event_table.php';
+        print_events(0);
     ?>
     <div class='row'>
     <div class='column'>
