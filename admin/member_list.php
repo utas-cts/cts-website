@@ -1,5 +1,5 @@
 <?php
-    require 'check_login.php';
+require 'check_login.php';
 ?>
 <!doctype html>
 <html lang='en'>
@@ -17,6 +17,7 @@
     <br>
     <table>
       <tr>
+        <th>Student Id</th>
         <th>Id</th>
         <th>First Name</th>
         <th>Last Name</th>
@@ -31,10 +32,12 @@
       </tr> 
     <?php
       require 'db_connect.php';
-      $query = 'SELECT * FROM members';
+      $query = '
+      SELECT members.*, memberships.ID, memberships.* FROM members inner
+      join memberships on members.ID=memberships.member';
       $result = mysqli_query($mysqli, $query);
     while ($row = mysqli_fetch_assoc($result)) {
-        echo '<tr><td>' . $row['ID'] . '</td><td>' . htmlspecialchars(
+        echo '<tr><td>' . $row['student_id'] . '</td><td>' .$row['ID']. '</td><td>' . htmlspecialchars(
             $row['first_name']
         ) . '</td><td>' .
         htmlspecialchars($row['last_name']) . '</td><td>' . $row['member_type'] .

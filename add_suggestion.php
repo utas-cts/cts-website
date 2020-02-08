@@ -1,5 +1,5 @@
 <?php
-if(!isset($_POST['suggestion'])){
+if (!isset($_POST['suggestion'])) {
     header('Location: ./index.php');
     die();
 }

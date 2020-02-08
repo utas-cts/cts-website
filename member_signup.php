@@ -16,9 +16,9 @@
     <div id="content-wrap">
     <form action="signup.php" method="post">
       <div id="user_details">
-        <label for="id">Student/Staff ID</label>
+        <label for="id">Student ID if applicable</label>
         <br>
-        <input type="number" id="id" name="id" max="999999999" required>
+        <input type="number" id="id" name="id" max="999999999">
         <br>
         <label for="first_name">First Name</label>
         <br>
@@ -28,7 +28,7 @@
         <br>
         <input type="text" id="last_name" name="last_name" maxLength="32" required>
         <br>
-        <label for="email">Utas e-mail address</label>
+        <label for="email">E-mail address (UTAS email if student)</label>
         <br>
         <input id="email" name="email" type="email" maxLength="255" required>
       </div>
@@ -37,14 +37,15 @@
         <fieldset>
           <legend>Member Type</legend>
           <label>
-            <input id="staff" name="member_type" value="Staff" type="radio" required>
-            <i>Staff</i>
-          </label>
-          <label>
-              <input id="student" name="member_type" value="Student"
-              type="radio" required>
+            <input id="student" name="member_type" value="Student"
+            type="radio" required>
             <i>Student</i>
           </label>
+          <label>
+            <input id="other" name="member_type" value="Other" type="radio" required>
+            <i>Other</i>
+          </label>
+
         </fieldset>
       </div>
       
@@ -62,7 +63,7 @@
         </label>
       </div>
 
-      <button>Submit</button>
+      <input type="submit" name="submit" id="submit" value="Submit">
     </form>
     </div>
     <?php

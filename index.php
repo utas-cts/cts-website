@@ -28,7 +28,7 @@
     <h2>Events</h2>
     <h3>What we offer</h3>
     <p>
-    The CTS try to run at least one event a week, we frequently run barbecues where members eat
+    The CTS try to run at least one event per week, we frequently run barbecues where members eat
     free, we have games days, bowling nights, and D&D days to name a few. While we are the Computing 
     and Technology society, only some of our events relate to technology, most are simply
     opportunities to socialise with other students/staff. We run events both on and off the UTAS Newnham
@@ -39,11 +39,11 @@
     <h3>Today's Event/s</h3>
         <?php
         require 'event_table.php';
-        if(!print_events(1)){
+        if (!print_events(1)) {
             echo 'There are no events today. Visit the <a href="events.php">events page</a>
                 to see all scheduled events for the next two weeks';
         }
-    ?>
+        ?>
     </div>
     </div>
     <?php
