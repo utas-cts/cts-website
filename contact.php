@@ -28,8 +28,8 @@
     <div class="column">
     <h2>General Inquiries</h2>
     <p>
-    For general inquiries you can email us at cts.utas@gmail.com or fill in the form below
-    we endeavour to answer all correspondence promptly, however in some instances it may take
+    For general inquiries you can email us at cts.utas@gmail.com or fill in the form below.
+    We endeavour to answer all correspondence promptly, however in some instances it may take
     a day or two for a reply
     </p>
     <form>
