@@ -20,7 +20,7 @@ only screen and (max-width: 760px),
         border-bottom: 1px solid #aaa;
         text-align: left;
         position: relative;
-        padding-left: 30%;
+        padding-left: 12ch;
         max-width: none;
     }
     

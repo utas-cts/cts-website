@@ -16,7 +16,7 @@
     <div id="content-wrap">
     <h2>UTAS Computing & Technology Society (CTS)</h2>
     <p>
-    The CTS is a TUU affiliated society providing value(Insert actual substance here)
+    The CTS is a TUU affiliated society providing value
     to Launceston attending students of UTAS. Now in our fifth year, our society has won
     awards including best society three years in a row and remain committed to continuing
     to offer events for students of any background. Get in contact with us or

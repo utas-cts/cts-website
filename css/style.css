@@ -23,7 +23,7 @@ li.navbar a {
     display: block;
     color: var(--hyperlink_colour);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 14px;
     text-decoration: none;
 }
 
