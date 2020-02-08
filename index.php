@@ -32,11 +32,11 @@
     free, we have games days, bowling nights, and D&D days to name a few. While we are the Computing 
     and Technology society, only some of our events relate to technology, most are simply
     opportunities to socialise with other students/staff. We run events both on and off the UTAS Newnham
-    campus so that students have a greater chance of being able to attend. If you have any ideas for events
-    that you would like to attend please post a suggestion at the <a href='contact.php'>contacts page.</a>
+    campus, as well as discord game nights, so that students have a greater chance of being able to
+    attend. If you have any ideas for events that you would like to attend please post a suggestion at
+    the <a href='contact.php'>contacts page.</a>
     </p>
-
-    <h3>Todays Event/s</h3>
+    <h3>Today's Event/s</h3>
         <?php
         require 'event_table.php';
         if(!print_events(1)){
