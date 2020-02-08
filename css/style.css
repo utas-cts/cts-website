@@ -65,6 +65,8 @@ body {
 
 table {
     border-collapse: collapse;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
 }
 
 tr:hover {
