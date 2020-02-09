@@ -120,6 +120,9 @@ fieldset {
     padding-top: 1vh;
     padding-left: 10vw;
     padding-right: 10vw;
+
+	width: 40em;
+	margin: auto;
 }
 
 #socialMedia {
