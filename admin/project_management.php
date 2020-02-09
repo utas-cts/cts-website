@@ -18,8 +18,7 @@
     <?php
         require 'project_table.php';
     ?>
-    <div class='row'>
-    <div class='column'>
+    <div class='left'>
     <h2>Add project</h2>
     <h3>* required field</h3>
     <form action='./add_project.php' method='post'>
@@ -68,7 +67,7 @@
     <button>Submit</button>
     </form>
     </div>
-    <div class='column'>
+    <div class='right'>
     <h2>Archive Project</h2>
     <form action='./archive_project.php' method='post'>
     <lable>
@@ -79,7 +78,6 @@
     <br>
     <button>Submit</button>
     </form>
-    </div>
     </div>
   </body>
 </html>

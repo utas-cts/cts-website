@@ -27,8 +27,7 @@
         echo '<ol>' . htmlspecialchars($row['username']) . '</ol>';
     }
     ?>
-    <div class='row'>
-      <div class='column'>
+      <div class='left'>
         <h2>Add new admin</h2>
         <form action='./add_admin.php' method='post'>
           <label>
@@ -46,7 +45,7 @@
           <button>Submit</button>
         </form>
       </div>
-      <div class='column'>
+      <div class='right'>
         <h2>Update Password</h2>
         <form action='./update_admin.php' method='post'>
           <label>
@@ -63,7 +62,6 @@
           <br>
           <button>Submit</button>
         </form> 
-      </div>
     </div>
   </body>
 </html>

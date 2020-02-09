@@ -44,4 +44,14 @@ only screen and (max-width: 760px),
 		margin: none;
 	}
 
+	.left{
+		float: none;
+		width: 100%;
+	}
+
+	.right {
+		float: none;
+		width: 100%;
+	}
+
 }

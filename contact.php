@@ -15,8 +15,7 @@
        require 'navbar.php';
     ?>
     <div id="content-wrap">
-    <div class="row">
-    <div class="column">
+    <div class="left">
       <h2>Suggestions</h2>
       <form action='./add_suggestion.php' method='post'>
       <label for="suggestion">Suggestion (max 1000 characters)</label>
@@ -26,7 +25,7 @@
       <button>Submit</button>
       </form>
     </div>
-    <div class="column">
+    <div class="right">
     <h2>General Inquiries</h2>
     <p>
     For general inquiries you can email us at cts.utas@gmail.com or fill in the form below.
@@ -35,7 +34,6 @@
     </p>
     <form>
     </form>
-    </div>
     </div>
     </div>
     <?php
