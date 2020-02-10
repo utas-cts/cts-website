@@ -75,5 +75,17 @@ $query->bind_param(
     $photo_allowed,
     $email_allowed
 );
-$query->execute();
-header("Location: ./index.php");
+if($query->execute() && $email_allowed == 1){
+    $query = $mysqli->prepare(
+        'INSERT INTO email_confirmation (membership, signup_key) values (?,?)'
+    );
+    $key = uniqid('',true);
+    $id = $mysqli->insert_id;
+    $query->bind_param(
+        'is',
+        $id,
+        $key
+    );
+    $query->execute();
+}
+header('Location: ./index.php');
