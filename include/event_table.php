@@ -8,11 +8,11 @@ function print_events($days)
     $cutoff = date('Y-m-d H:i:s', strtotime('+' . $days . 'day'));
     if ($_SESSION['authorised'] == true) {
         $event_query = 'SELECT id, name, event_datetime, description, location,
-    	   	may_change, cost from events';
+    	   	may_change, cost from events ORDER BY event_datetime';
     } else {
         $event_query = "SELECT name, event_datetime, description, location, may_change,
-    	cost from events where event_datetime > '$date' and event_datetime < 
-    	'$cutoff'";
+    	cost from events WHERE event_datetime > '$date' and event_datetime < 
+    	'$cutoff' ORDER BY event_datetime";
     }
     $table = mysqli_query($mysqli, $event_query);
     
