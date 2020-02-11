@@ -12,8 +12,7 @@
         require 'navbar.php';
     ?>
     <h2>Poster management</h2>
-    <div class='row'>
-      <div class='column'>
+      <div class='left'>
         <h2>Upload poster</h2>
         <form action='./add_poster.php' method='post' enctype='multipart/form-data'>
         <div id='inputs'>
@@ -45,7 +44,7 @@
           <input type='submit' name='submit' value='Upload'>
         </form>
       </div>
-      <div class='column'>
+      <div class='right'>
         <h2>Poster view</h2>
         <?php
             require 'db_connect.php';
@@ -56,7 +55,6 @@
                 $row['event_date'] . ' - ' .  $row['short_name'] . "</p></a>";
         }
         ?>
-      </div>
     </div>
   </body>
 </html>

@@ -19,8 +19,7 @@
         require 'event_table.php';
         print_events(0);
     ?>
-    <div class='row'>
-    <div class='column'>
+    <div class='left'>
     <h2>Add event</h2>
     <form action='./add_event.php' method='post'>
     <lable>
@@ -68,7 +67,7 @@
     <button>Submit</button>
     </form>
     </div>
-    <div class='column'>
+    <div class='right'>
     <h2>Delete Event</h2>
     <form action='./delete_event.php' method='post'>
       <label>
@@ -78,7 +77,6 @@
       <br>
       <button>Submit</button>
     </form>
-    </div>
     </div>
   </body>
 </html>
