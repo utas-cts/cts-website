@@ -32,7 +32,7 @@ li.navbar-image a {
     color: var(--hyperlink_colour);
     text-align: center;
     text-decoration: none;
-    padding: 0px 5px;
+    padding: 0 5px;
 }
 
 
@@ -108,10 +108,7 @@ fieldset {
 }
 
 #content-wrap {
-    padding-bottom: 12rem;
-    padding-top: 1vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+	padding: 1vh 10vw 12rem 10vw;
     width: 40em;
 	  margin: auto;
 }

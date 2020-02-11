@@ -36,10 +36,7 @@ only screen and (max-width: 760px),
     }
 	
 	#content-wrap {
-		padding-bottom: 12rem;
-	    padding-top: 1vh;
-		padding-left: 5vw;
-	    padding-right: 5vw;
+		padding: 1vh 5vw 12rem 5vw;
 		width: auto;
 		margin: none;
 	}
