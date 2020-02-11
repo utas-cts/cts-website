@@ -2,15 +2,15 @@
 require 'db_connect.php';
 require 'check_login.php';
 
-$query = $mysqli->prepare('SELECT semester_1, semester_2 from members WHERE id=?');
+$query = $mysqli->prepare('SELECT semester_1, semester_2 from memberships WHERE ID=?');
 $query->bind_param('i', $_POST['id']);
 $query->execute();
 $result = $query->get_result();
 $row = $result->fetch_assoc();
 $date = date('Y-m-d H:i:s');
 $query = $mysqli->prepare(
-    'UPDATE members SET payment_date=?, semester_1=?,
-	semester_2=? WHERE id=?'
+    'UPDATE memberships SET payment_date=?, semester_1=?,
+	semester_2=? WHERE ID=?'
 );
 switch ($_POST['payment_type']) {
     case 'First_Semester':

@@ -1,9 +1,10 @@
 <?php
-function print_events($days){
+function print_events($days)
+{
     require 'db_connect.php';
     
     //Format dates so that mysql understands them
-    $date = date('Y-m-d H:i:s',strtotime('today midnight'));
+    $date = date('Y-m-d H:i:s', strtotime('today midnight'));
     $cutoff = date('Y-m-d H:i:s', strtotime('+' . $days . 'day'));
     if ($_SESSION['authorised'] == true) {
         $event_query = 'SELECT id, name, event_datetime, description, location,

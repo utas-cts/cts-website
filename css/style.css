@@ -32,12 +32,12 @@ li.navbar-image a {
     color: var(--hyperlink_colour);
     text-align: center;
     text-decoration: none;
-	padding: 0px 5px;
+    padding: 0px 5px;
 }
 
 
 li.navbar-image img {
-	height: 3.3em;
+    height: 3.3em;
 }
 
 
@@ -65,8 +65,8 @@ body {
 
 table {
     border-collapse: collapse;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 tr:hover {
