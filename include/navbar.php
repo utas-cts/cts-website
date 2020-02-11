@@ -1,7 +1,7 @@
 <?php
 echo "
 <ul class='navbar'>
-  <li class='navbar'><a href='/index.php'>Home</a></li>
+  <li class='navbar-image'><a href='/index.php'><img src='/logo.svg'></a></li>
   <li class='navbar'><a href='/events.php'>Events</a></li>
   <li class='navbar'><a href='/projects.php'>Projects</a></li>
   <li class='navbar'><a href='/contact.php'>Contacts</a></li>
