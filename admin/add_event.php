@@ -1,7 +1,7 @@
 <?php
 require 'db_connect.php';
 require 'check_login.php';
-if ($_POST['may_change'] == 'yes') {
+if (isset($_POST['may_change']) && $_POST['may_change'] == 'yes') {
     $may_change = 1;
 } else {
     $may_change = 0;
