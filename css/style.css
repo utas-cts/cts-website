@@ -23,7 +23,7 @@ li.navbar a {
     display: block;
     color: var(--hyperlink_colour);
     text-align: center;
-    padding: 14px 14px;
+    padding: 14px;
     text-decoration: none;
 }
 
@@ -58,9 +58,11 @@ li a:hover {
 }
 
 body {
-    background-color: var(--background_colour);
+	background: linear-gradient(45deg, black, transparent), 
+        repeating-linear-gradient(45deg, rgb(41,41,41) 0%, rgb(41,41,41) 5%, transparent 5%, transparent 10%),
+        rgb(60,60,60) repeating-linear-gradient(-45deg, rgba(41,41,41,0.5) 0%, rgba(41,41,41, 0.5) 5%, transparent 5%, transparent 10%);
     color: var(--text_colour);
-    margin: 0 2vw 0 2vw;
+    margin: 0 2vw;
 }
 
 table {
@@ -108,7 +110,7 @@ fieldset {
 }
 
 #content-wrap {
-	padding: 1vh 10vw 12rem 10vw;
+	padding: 1vh 10vw 12rem;
     width: 40em;
 	  margin: auto;
 }
