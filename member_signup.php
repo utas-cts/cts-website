@@ -52,13 +52,13 @@
       
       <div id="permissions">
         <label>
-          <input id="photograph_allowed" name="photograph_allowed" type="checkbox">
+          <input id="photograph_allowed" name="photograph_allowed" type="checkbox" value="on">
           Check if you will allow the CTS to take your photo at 
           events and use them on social media
         </label>
         <br>
         <label>
-          <input id="email_allowed" name="email_allowed" type="checkbox">
+          <input id="email_allowed" name="email_allowed" type="checkbox" value="on">
           Check if you will allow the CTS to contact you via email 
           (You can opt out any time)
         </label>
