@@ -34,21 +34,21 @@ only screen and (max-width: 760px),
         width: 45%;
         padding-right: 10px;
     }
-	
-	#content-wrap {
-		padding: 1vh 5vw 12rem 5vw;
-		width: auto;
-		margin: none;
-	}
+    
+    #content-wrap {
+        padding: 1vh 5vw 12rem 5vw;
+        width: auto;
+        margin: none;
+    }
 
-	.left{
-		float: none;
-		width: 100%;
-	}
+    .left{
+        float: none;
+        width: 100%;
+    }
 
-	.right {
-		float: none;
-		width: 100%;
-	}
+    .right {
+        float: none;
+        width: 100%;
+    }
 
 }

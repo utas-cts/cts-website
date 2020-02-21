@@ -17,7 +17,7 @@ if (!isset($_POST['submit'])) {
     require 'navbar.php';
     $uploadOk = true;
     $file_exists = false;
-    $poster_directory = 'posters/';
+    $poster_directory = '../posters/';
     $check = getimagesize($_FILES['poster_image']['tmp_name']);
 if ($check !== false) {
     $tempfile_name=$_FILES['poster_image']['tmp_name'];
@@ -55,7 +55,6 @@ if ($uploadOk) {
             $_POST['short_name']
         );
         $query->execute();
-        header('Location: index.php');
     } else {
         if (move_uploaded_file($tempfile_name, $poster_file)) {
             $query = $mysqli->prepare(
@@ -69,11 +68,24 @@ if ($uploadOk) {
                 $_POST['short_name']
             );
             $query->execute();
-            header('Location: index.php');
         } else {
             echo 'File could not be moved. Contact the admin';
+            header('Location: index.php');
         }
     }
+    $last_id = $query->insert_id;
+    if (isset($_POST['event_id'])) {
+        $query = $mysqli->prepare(
+            'INSERT INTO event_posters (poster_id, event_id) values (?, ?)'
+        );
+        $query->bind_param(
+            'ii',
+            $last_id,
+            $_POST['event_id']
+        );
+        $query->execute();
+    }
+    header('Location: index.php');
 }
 ?>
  </body>
