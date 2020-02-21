@@ -104,18 +104,18 @@ fieldset {
     display: inline-block;
 }
 
-#page-container {
+.page-container {
     position: relative;
     min-height: 100vh;
 }
 
-#content-wrap {
+.content-wrap {
 	padding: 1vh 10vw 12rem;
     width: 40em;
 	  margin: auto;
 }
 
-#socialMedia {
+.socialMedia {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     line-height: 1em;

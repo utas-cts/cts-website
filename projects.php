@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
-  <div id="page-container">
+  <div class="page-container">
     <?php
         require 'navbar.php';
     ?>
-    <div id="content-wrap">
+    <div class="content-wrap">
     <h2>Current CTS Projects</h2>
     <?php
         require 'project_table.php';

@@ -1,5 +1,5 @@
 <?php
-echo '<footer id="socialMedia">
+echo '<footer class="socialMedia">
     <div class="wrap">
         <div class="left">
 			<h3>Contact Us</h3>
