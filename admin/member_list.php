@@ -34,7 +34,7 @@ require 'check_login.php';
       require 'db_connect.php';
       $query = '
       SELECT members.*, memberships.ID, memberships.* FROM members inner
-      join memberships on members.ID=memberships.member ORDER BY memberships.signup_date';
+      join memberships on members.ID=memberships.member ORDER BY memberships.signup_date DESC';
       $result = mysqli_query($mysqli, $query);
     while ($row = mysqli_fetch_assoc($result)) {
         echo '<tr><td>' . $row['student_id'] . '</td><td>' .$row['ID']. '</td><td>' . htmlspecialchars(
