@@ -41,8 +41,9 @@
     <hr>
     <div>
     <h3>Membership Form</h3>
-    <p>* Membership costs are $6 for a semester or $10 for the year</p>
-    <p>** To pay, just come up to us at our next event with your student ID and you'll receive your membership card</p> 
+    <p class='note'>Membership costs are $6 for a semester or $10 for the year</p>
+    <p class='note'>To pay, just come up to us at our next event with your student ID
+    and you'll receive your membership card</p> 
     <form action="signup.php" method="post">
       <div id="user_details">
         <label for="id">Student ID if applicable</label>

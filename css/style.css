@@ -146,3 +146,7 @@ fieldset {
     display: inline-table;
     margin-top: 20px;
 }
+
+p.note {
+    color: red;
+}
