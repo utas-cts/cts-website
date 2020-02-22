@@ -19,7 +19,7 @@
       <div id="user_details">
         <label for="id">Student ID if applicable</label>
         <br>
-        <input type="number" id="id" name="id" max="999999999">
+        <input type="number" id="id" name="id" min="0" max="999999999">
         <br>
         <label for="first_name">First Name</label>
         <br>
