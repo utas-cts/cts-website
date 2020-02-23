@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
  <body>
-   <div id="page-container">
+   <div class="page-container">
      <?php
         require 'navbar.php';
         ?>
-    <div id="content-wrap">
-    <div id="introduction">
+    <div class="content-wrap">
+    <div class="introduction">
     <h2>UTAS Computing & Technology Society (CTS)</h2>
     <p>
     The CTS is a TUU affiliated society providing value
@@ -25,7 +25,7 @@
     with us or <a href='member_signup.php'>signup</a> today to learn more.
     </p>
     </div>
-    <div id="events">
+    <div class="events">
     <h2>Events</h2>
     <h3>What we offer</h3>
     <p>
