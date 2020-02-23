@@ -6,13 +6,24 @@ function print_events($days)
     //Format dates so that mysql understands them
     $date = date('Y-m-d H:i:s', strtotime('today midnight'));
     $cutoff = date('Y-m-d H:i:s', strtotime('+' . $days . 'day'));
-    if ($_SESSION['authorised'] == true) {
-        $event_query = 'SELECT id, name, event_datetime, description, location,
-    	   	may_change, cost from events ORDER BY event_datetime';
+    if ($_SESSION['authorised'] && $days == 0) {
+        $event_query = 'SELECT events.id, name, filename, event_datetime,
+        description, location, may_change, cost from
+        ((events left join event_posters on events.ID=event_id)
+        left join posters on posters.ID=event_posters.poster_id) ORDER BY event_datetime';
+    } elseif ($_SESSION['authorised']) {
+        $event_query = "SELECT events.id, name, filename, event_datetime,
+            description, location, may_change, cost from
+            ((events left join event_posters on events.ID=event_id)
+            left join posters on posters.ID=event_posters.poster_id)
+            WHERE event_datetime > '$date' and event_datetime <
+            '$cutoff' ORDER BY event_datetime";
     } else {
-        $event_query = "SELECT name, event_datetime, description, location, may_change,
-    	cost from events WHERE event_datetime > '$date' and event_datetime < 
-    	'$cutoff' ORDER BY event_datetime";
+        $event_query = "SELECT name, filename, event_datetime, description, location, may_change, cost
+        from ((events left join event_posters on events.ID=event_id)
+        left join posters on posters.ID=event_posters.poster_id)
+        WHERE event_datetime > '$date' and event_datetime <
+        '$cutoff' ORDER BY event_datetime";
     }
     $table = mysqli_query($mysqli, $event_query);
     
@@ -40,7 +51,13 @@ function print_events($days)
             if ($_SESSION['authorised'] == true) {
                 echo '<td data-label="ID:">' . $row['id'] . '</td>';
             }
-            echo '<td data-label="Event:">' . htmlspecialchars($row['name']) . '</td><td data-label="Date:">' .
+            echo '<td data-label="Event:">';
+            if (isset($row['filename'])) {
+                echo "<a href='/posters/" . $row['filename'] . "'>" . htmlspecialchars($row['name']) . '</a>';
+            } else {
+                echo htmlspecialchars($row['name']);
+            }
+            echo '</td><td data-label="Date:">' .
             date_format(date_create($row['event_datetime']), 'D M dS ga') .
             '</td><td data-label="Description:">' .
             htmlspecialchars($row['description']) . '</td><td data-label="Location:">' .

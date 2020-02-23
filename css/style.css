@@ -110,9 +110,9 @@ fieldset {
 }
 
 .content-wrap {
-	padding: 1vh 10vw 12rem;
+	  padding: 1vh 10vw 12rem;
     width: 40em;
-	  margin: auto;
+    margin: auto;
 }
 
 .socialMedia {
@@ -138,4 +138,13 @@ fieldset {
 .right {
     float: right;
     width: 50%;
+}
+
+.center {
+    text-align: center;
+}
+
+.center table {
+    display: inline-table;
+    margin-top: 20px;
 }

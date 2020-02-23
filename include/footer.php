@@ -11,7 +11,7 @@ echo '<footer class="socialMedia">
             <a class="sm" href="https://www.facebook.com/groups/utascts/">Facebook</a>
             <a class="sm" href="https://discord.gg/48HcHu7">Discord</a>
             <!--<a class="sm" >Instagram</a> Link needs insertion -->
-			<a class="sm" href="https://reddit.com/r/cts">Reddit</a>
+			<a class="sm" href="https://old.reddit.com/r/cts">Reddit</a>
         </div>
     </div>
 </footer>';

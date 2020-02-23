@@ -61,7 +61,7 @@
     <lable>
       Event may change
       <br>
-      <input type='checkbox' name='may_change'>
+      <input type='checkbox' name='may_change' value='yes'>
     </lable>
     <br>
     <button>Submit</button>
