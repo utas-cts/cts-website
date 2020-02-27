@@ -9,5 +9,5 @@ CREATE TABLE memberships(
 	photo_allowed BOOLEAN NOT NULL,
 	email_allowed BOOLEAN NOT NULL,
 	primary key (ID),
-	foreign key (member) references members(ID)
+	foreign key (member) references members(ID),
 );
