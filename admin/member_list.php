@@ -9,13 +9,37 @@ require 'check_login.php';
     <meta name='viewport' content='width=device-width,initial-scale=1,
       user-scalable=yes'/>
     <link rel='stylesheet' href='/css/style.css'>
+    <script>
+function filterTable() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("memberFilter");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("memberTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[2];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
   </head>
   <body>
     <?php
       require 'navbar.php';
     ?>
     <br>
-    <table>
+    <input type="text" id="memberFilter" onkeyup="filterTable()" placeholder="Search for names..">
+    <table id="memberTable">
       <tr>
         <th>Student Id</th>
         <th>Id</th>
