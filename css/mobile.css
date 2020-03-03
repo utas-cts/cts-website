@@ -35,11 +35,11 @@ only screen and (max-width: 760px),
         padding-right: 10px;
     }
 
-	  .content-wrap {
-		  padding: 1vh 5vw 12rem;
-		  width: auto;
-		  margin: none;
-	  }
+      .content-wrap {
+          padding: 1vh 5vw 12rem;
+          width: auto;
+          margin: none;
+      }
 
     .left{
         float: none;
@@ -51,8 +51,8 @@ only screen and (max-width: 760px),
         width: 100%;
     }
 
-	h1, h2, h3, h4, p{
-		text-align: center;
-	}
+    h1, h2, h3, h4, p{
+        text-align: center;
+    }
 
 }
