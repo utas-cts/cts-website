@@ -9,6 +9,7 @@ require 'check_login.php';
     <meta name='viewport' content='width=device-width,initial-scale=1,
       user-scalable=yes'/>
     <link rel='stylesheet' href='/css/style.css'>
+    <link rel='stylesheet' href='/css/mobile.css'>
     <script>
 function filterTable() {
   // Declare variables
@@ -34,9 +35,12 @@ function filterTable() {
 </script>
   </head>
   <body>
+
+  <div class="page-container">
     <?php
       require 'navbar.php';
     ?>
+    <div class="content-wrap">
     <br>
     <input type="text" id="memberFilter" onkeyup="filterTable()" placeholder="Search for names..">
     <table id="memberTable">
@@ -93,8 +97,11 @@ function filterTable() {
         <br>
         <button>Submit</button>
         <br>
-
-
     </form>
+    </div>
+    <?php
+      require 'footer.php';
+    ?>
+    </div>
   </body>
 </html>

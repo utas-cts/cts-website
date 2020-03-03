@@ -58,7 +58,7 @@ li a:hover {
 }
 
 body {
-	background: linear-gradient(45deg, black, transparent),
+    background: linear-gradient(45deg, black, transparent),
         repeating-linear-gradient(45deg, rgb(41,41,41) 0%, rgb(41,41,41) 5%, transparent 5%, transparent 10%),
         rgb(60,60,60) repeating-linear-gradient(-45deg, rgba(41,41,41,0.5) 0%, rgba(41,41,41, 0.5) 5%, transparent 5%, transparent 10%);
     color: var(--text_colour);
@@ -110,7 +110,7 @@ fieldset {
 }
 
 .content-wrap {
-	  padding: 1vh 10vw 12rem;
+      padding: 1vh 10vw 12rem;
     width: 40em;
     margin: auto;
 }
