@@ -16,7 +16,7 @@
        ?>
     <div id="content-wrap">
       <h3>Congratulations! You have successfully signed up to the CTS!</h3>
-      <p>Click <a href="index.php">here</a> to go back to the home page.</p>
+      <p>Click <a href="./index.php">here</a> to go back to the home page.</p>
     </div>
     <?php
         require 'footer.php';
