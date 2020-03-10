@@ -5,7 +5,7 @@ function print_events($days)
     
     //Format dates so that mysql understands them
     $date = date('Y-m-d H:i:s', strtotime('today midnight'));
-    $cutoff = date('Y-m-d H:i:s', strtotime('+' . $days . 'day'));
+    $cutoff = date('Y-m-d H:i:s', strtotime('today midnight+' . $days . 'day'));
     if ($_SESSION['authorised'] && $days == 0) {
         $event_query = 'SELECT events.id, name, filename, event_datetime,
         description, location, may_change, cost from
