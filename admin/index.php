@@ -20,5 +20,6 @@
     <a href='./project_management.php'><p>Project Management</p></a>
     <a href='./manage_admins.php'><p>Manage Admins</p></a>
     <a href='./manage_posters.php'><p>Manage Posters</p></a>
+    <a href='./suggestions_table.php'><p>Suggestions</p></a>
   </body>
 </html>
