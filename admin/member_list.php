@@ -40,7 +40,6 @@ function filterTable() {
     <?php
       require 'navbar.php';
     ?>
-    <div class="content-wrap">
     <br>
     <input type="text" id="memberFilter" onkeyup="filterTable()" placeholder="Search for names..">
     <table id="memberTable">
@@ -98,7 +97,6 @@ function filterTable() {
         <button>Submit</button>
         <br>
     </form>
-    </div>
     <?php
       require 'footer.php';
     ?>
