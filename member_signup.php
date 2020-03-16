@@ -30,18 +30,11 @@
         <p><b>Affiliates:</b></p>
         <p>One of our current ambitions is to bring more value to being a part of the society as a member, and 
         one particular way we're going about this is extending offers to off campus services through affiliations. 
-        Currently, <a href='https://www.another.com.au/'>Another Computer Store</a> has offered to provide priority
-        service to our members. They have stated:</p>
-        
-        <p><i>"Your members will receive priority service. If a student needs help getting their 
-        computer working, they will go to the top of our queue. The same applies if they need data 
-        recovery or if they want a new computer and setup. We understand that students are on a budget 
-        and funds are always important because one day they will be earning the big $$."</i></p>
         </div>
     <hr>
     <div>
-    <h3>Membership Form</h3>
-    <p class='note'>Membership costs are $6 for a semester or $10 for the year</p>
+    <h2>Membership Form</h2>
+    <p class='note'>Membership costs $6 for a semester or $10 for the year</p>
     <p class='note'>To pay, just come up to us at our next event with your student ID
     and you'll receive your membership card</p> 
     <form action="signup.php" method="post">
