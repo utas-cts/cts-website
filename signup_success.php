@@ -14,7 +14,7 @@
      <?php
         require 'navbar.php';
        ?>
-    <div id="content-wrap">
+    <div class="content-wrap">
       <h3>Congratulations! You have successfully signed up to the CTS!</h3>
       <p>Click <a href="./index.php">here</a> to go back to the home page.</p>
     </div>
