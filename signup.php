@@ -76,4 +76,4 @@ $query->bind_param(
     $email_allowed
 );
 $query->execute();
-header("Location: ./index.php");
+header("Location: ./signup_success.php");
