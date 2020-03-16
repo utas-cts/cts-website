@@ -29,7 +29,8 @@
         
         <p><b>Affiliates:</b></p>
         <p>One of our current ambitions is to bring more value to being a part of the society as a member, and 
-        one particular way we're going about this is extending offers to off campus services through affiliations. 
+        one particular way we're going about this is by partnering with outside services to provide benifits to
+        members such as discounts.
         </div>
     <hr>
     <div>
