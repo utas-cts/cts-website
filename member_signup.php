@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
-  <div id="page-container">
+  <div class="page-container">
     <?php
       require 'navbar.php';
     ?>
-    <div id="content-wrap">
+    <div class="content-wrap">
       <div>
         <h2>About becoming a CTS Member</h2>
         <p>Becoming a member is one of the easiest ways to support us and help fund future CTS events. 
@@ -38,6 +38,7 @@
     <p class='note'>Membership costs $6 for a semester or $10 for the year</p>
     <p class='note'>To pay, just come up to us at our next event with your student ID
     and you'll receive your membership card</p> 
+
     <form action="signup.php" method="post">
       <div id="user_details">
         <label for="id">Student ID if applicable</label>

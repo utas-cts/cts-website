@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
-  <div id="page-container">
+  <div class="page-container">
     <?php
       require 'navbar.php';
     ?>
-    <div id="content-wrap">
-    <h2>Today's Date: <?php echo date('M dS')?></h2>
+    <div class="content-wrap">
+    <h2>Todays Date: <?php echo date('M dS')?></h2>
     <div style="overflow-x:auto;">
     <?php
         require 'event_table.php';

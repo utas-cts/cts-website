@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
-  <div id="page-container">
+  <div class="page-container">
     <?php
       require 'navbar.php';
     ?>
-    <div id="content-wrap">
+    <div class="content-wrap">
     <form action="login.php" method="post">
       <label>
         Username:

@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
-    <div id="page-container">
+    <div class="page-container">
     <?php
        require 'navbar.php';
     ?>
-    <div id="content-wrap">
+    <div class="content-wrap">
     <div class="left">
       <h2>Suggestions</h2>
       <form action='./add_suggestion.php' method='post'>
